@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Grid Layout</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: 250px 250px 250px; 
+            grid-gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .item {
+            background-color: #ffffff;
+            border: 2px solid #1e8e2d;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .item figcaption {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        #i1 {
+            grid-area: 1 / 1 / 3 / span 3; 
+            
+        }
+        #i2 {
+            grid-area: 2 / 1 / 2 / span 1; 
+        }
+        #i3 {
+            grid-area: 2 / 2 / 2 / span 1; 
+        }
+        #i4 {
+            grid-area: 2 / 3 / 3 / span 1; 
+        }
+        #i5 {
+            grid-area: 3 / 1 / 3 / span 1; /* Spans 2 columns but starts in column 1 */
+        }
+        #i6 {
+            grid-area: 3 / 2 / 4 / span 2; /* Starts in the same column as #i5 and goes to the next row */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1"> 
+            <img src="https://lh5.googleusercontent.com/p/AF1QipN_Z0joVA6fBgcigLASUpXpZuCAovi5PDAMmp6C=w1188-h686-n-k-no" alt="andhra">
+            <figcaption>Biriyani</figcaption>
+        </div>
+        <div class="item" id="i2">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-manora-fort-thanjavur-tamil-nadu-attr-hero?qlt=82&ts=1726655416431" alt="manora fort">
+            <figcaption>Manora Fort</figcaption>
+        </div>
+        <div class="item" id="i3">
+            <img src=https://lh6.googleusercontent.com/proxy/sd_kXANGSS8pzJ8pah08VErcJSMw_EDrw_O4uITh24dMopJkKBLoaZxl2-bYu0PM8scBdhETLLWSM_zIoRhchl2ZgtWsjwuP9RsF_aUZK-q6vxeiRFc28_s-lxwvE5ETZR8tRp1J9iMxYvKnymqT5BOCQ631XyE=w1188-h686-n-k-no alt="tamilnadu">
+            <figcaption>Sambar</figcaption>
+        </div>
+        <div class="item" id="i4">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipMD5bQz97b3JAQgk6UwXIlX3xC5igaJyQUpMbvp=w1188-h686-n-k-no" alt="karnataka">
+            <figcaption>Bongulo chicken</figcaption>
+        </div>
+        <div class="item" id="i5">
+            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRK431r_TNBlFJsMIdHxfGLmxr4h_gUSvnqeRYQ3i3gfJvzkUwakbO3Uk-ZsQVoEcrIplC5NRuTf3s2QKYcQZT4gNBR7RxT66IpVFDaWQ" alt="punjab">
+            <figcaption>Paneer curry</figcaption>
+        </div>
+        <div class="item" id="i6">
+            <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRsB0sPeIVWzwd9si8DtRHomVFnn-PLqCk1qlRiT_aKeFgUEyEbsHsKJjuXf2BIpU61KEdAHnz1cCaW5WF-LHKaXvW6N6Aj2jWM0dU0lA" alt="kerala">
+            <figcaption>Kerala Sadya</figcaption>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
