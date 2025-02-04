@@ -13,7 +13,7 @@ body {
 
 header {
     display: block;
-    padding: 25px;
+    padding: 10px 25px;
     background-color: greenyellow;
     color: ghostwhite;
 }
@@ -38,7 +38,7 @@ main {
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
     gap: 20px;
-    padding: 25px;
+    padding: 10px 25px;
     height: calc(100vh - 100px); /* Adjust based on header height */
     overflow: hidden; /* Prevents scrolling */
 }
@@ -63,12 +63,15 @@ main .card:nth-child(3) {
 
 main .card {
     padding: 10px 20px;
+    margin: 20px;
     color: black;
-    border: 2px solid #ccc;
+    border: 2px solid transparent;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #ccc;
     background-color: #ffffff;
-    width: 300px; /* Fixed width for cards */
+    width: 400px; 
+    height: 200px;
+
 }
 
 main .card h2 {
@@ -78,4 +81,21 @@ main .card h2 {
 
 main .card h3 {
     color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem; /* Space between social links */
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
